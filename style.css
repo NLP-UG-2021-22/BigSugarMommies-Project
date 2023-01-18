@@ -373,7 +373,7 @@ p{
 }
 
 select {
-  // styles reset, including removing the default dropdown arrow
+   /* styles reset, including removing the default dropdown arrow */
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -387,10 +387,10 @@ select {
   cursor: inherit;
   line-height: inherit;
 
-  // Stack above custom arrow
+   /* Stack above custom arrow */
   z-index: 1;
 
-  // Remove focus outline
+   /* Remove focus outline */
   outline: none;
 }
 
@@ -414,11 +414,11 @@ select {
   cursor: pointer;
   line-height: 1.1;
 
-  // Optional styles
-  // remove for transparency
+  /* Optional styles */
+  /* remove for transparency */
   background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
 
-  // Custom arrow
+  /* Custom arrow */
   &::after {
     content: "";
     justify-self: end;
@@ -456,7 +456,7 @@ select {
     width: 251px;
 }
 
-#fb
+#git
 {
     height: 15%;
     width: 15%;
