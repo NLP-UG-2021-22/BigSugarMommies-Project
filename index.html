@@ -3,7 +3,7 @@
 
 <head>
   <meta name="viewport" content="with=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>MojitoMan</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,12 +44,12 @@
 
   <section class="main-section">
     <div class="text-box">
-      <div class="top-text background-shadow">
+      <!-- <div class="top-text background-shadow"> -->
         <h1 class="line1">MOJITO</h1>
         <h1 class="line2">CHATBOT</h1>
         <h1 class="line3"> MAN</h1>
         <p>THE BEST CHATBOT FOR DRINKS</p>
-      </div>
+      <!-- </div> -->
 
       <a href="#chatbox" class="hero-btn background-shadow">TRY IT</a>
     </div>
@@ -131,6 +131,12 @@
 
       </div>
     </div>
+    <script>
+      function sendMessage() {
+        window.alert(document.getElementById("message").value);
+        document.getElementById("message").value = "";
+      }
+    </script>
   </section>
 
   <section id="recipes" class="Recipes">
