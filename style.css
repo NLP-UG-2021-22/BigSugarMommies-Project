@@ -474,6 +474,30 @@ div.desc {
     height: auto;
 }
 
+@media only screen and (max-width: 600px){
+    .chat{
+        width: fit-content;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .chat{
+        width: fit-content;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .chat{
+        width: fit-content;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .chat{
+        width: fit-content;
+    }
+}
+
 .chat{
     background: gray;
     border-radius: 20px;
