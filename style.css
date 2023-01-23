@@ -499,7 +499,7 @@ div.desc {
 }
 
 .chat{
-    background: gray;
+    background: #3d433b;
     border-radius: 20px;
     margin-left: 360px;
     margin-right: 360px;
@@ -507,7 +507,7 @@ div.desc {
     padding-top: 16px;
 }
 .chat .messages{
-    background: lightblue;
+    background: rgb(28, 193, 39);
     margin-left: 16px;
     margin-right: 16px;
     height: 660px;
@@ -520,19 +520,19 @@ div.desc {
     margin-right: 16px;
     margin-left: 16px;
     margin-top: 16px;
-    background: white;
+    background: rgb(151, 243, 169);
     width: fit-content;
     padding-right: 12px;
 }
 .chat .messages .message-container.darker{
-    background: #d7e2ec;
+    background: white;
 }
 .chat .messages .test{
     width: 100%;
     display: inline-block;
 }
 .chat .chat-popup{
-    background: lightblue;
+    background: rgb(28, 193, 39);
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 16px;
