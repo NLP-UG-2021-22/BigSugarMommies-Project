@@ -516,8 +516,7 @@ div.desc {
 .chat{
     background: #3d433b;
     border-radius: 20px;
-    margin-left: 360px;
-    margin-right: 360px;
+    margin: 0 auto;
     height: 800px;
     padding-top: 16px;
 }
@@ -604,7 +603,7 @@ footer {
     z-index: 99; 
     border: none;
     outline: none;
-    background-color: black;
+    background-color: transparent;
     cursor: pointer; 
     padding: 15px; 
     border-radius: 10px;
