@@ -288,6 +288,21 @@ p {
     font-size: 25px;
 }
 
+.text-chat {
+    color: rgb(32, 30, 30);
+    font-size: 20px;
+    line-height: 30px;
+    padding: 12px;
+    width: 328px;
+    padding-top: 5px;
+    border-style: hidden;
+    /* border-color: #336699; */
+    border-width: 1px;
+    padding-left: 3px;
+    /* padding-bottom: 10px; */
+    word-wrap: break-word;
+}
+
 h2 p {
     color: rgb(81, 126, 104);
     text-align: center;
@@ -511,8 +526,9 @@ div.desc {
     margin-left: 16px;
     margin-right: 16px;
     height: 660px;
-    border-radius: 20px;
+    border-radius: 1px;
 }
+
 .chat .messages .message-container{
     height: 80px;
     display: flex;
@@ -526,6 +542,7 @@ div.desc {
 }
 .chat .messages .message-container.darker{
     background: white;
+    margin-left: auto;
 }
 .chat .messages .test{
     width: 100%;
@@ -545,15 +562,15 @@ display:flex;
 
 .chat .chat-popup textarea{
     height: 108px;
-    border-radius: 20px;
+    border-radius: 1px;
     resize: none;
     width: 90%;
 }
 
 .chat .chat-popup button{
-    height: 108px;
-    width: 10%;
-    border-radius: 20px;
+    height: 111px;
+    width: 12%;
+    border-radius: 1px;
 }
 
 footer {
