@@ -529,7 +529,7 @@ div.desc {
     border-radius: 1px;
 }
 
-.chat .messages .message-container{
+/* .chat .messages .message-container{
     height: 80px;
     display: flex;
     border-radius: 20px;
@@ -543,7 +543,7 @@ div.desc {
 .chat .messages .message-container.darker{
     background: white;
     margin-left: auto;
-}
+} */
 .chat .messages .test{
     width: 100%;
     display: inline-block;
