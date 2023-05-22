@@ -88,8 +88,14 @@
     <div class="section-container">
       <h1 class="text_chatbot">Chatbot</h1>
 
-      <div class="chat">
+      <div id="chat" class="chat">
         <div class="messages">
+          <div id="chatFirstMess" class="message-container">
+            <p id="chatMess">Hello! Tell me the name of a drink you're looking for, or the name of alcohol which will be the main ingredient.</p>
+          </div>
+          <div id="userMessage">
+
+          </div>
           <!-- <div class="test">
             <div class="message-container">
               <img src="img/bot.png" alt="Avatar">
@@ -126,20 +132,16 @@
 
         </div>
         <div class="chat-popup" id="myForm">
-          <form action="/action_page.php" class="form-container">
-            <textarea id="message" placeholder="Type message.." name="msg" required></textarea>
-            <button type="submit" class="btn" onclick="sendMessage()">Send</button>
+          <form id="drinkform">
+            <!-- <textarea id="message" placeholder="Type message.." name="msg" required></textarea>
+            <button type="submit" class="btn" onclick="sendMessage()">Send</button> -->
+            <input type="text" id="drinkinput"/>
+            <input type="submit" id="drinksend" value="Send"/>
           </form>
         </div>
 
       </div>
     </div>
-    <script>
-      function sendMessage() {
-        window.alert(document.getElementById("message").value);
-        document.getElementById("message").value = "";
-      }
-    </script>
   </section>
 
   <section id="recipes" class="Recipes">
@@ -284,24 +286,7 @@
 
   <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/arrow.png" id="arrow"></button>
 
-  <script>
-let mybutton = document.getElementById("myBtn");
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-  </script>
+  <script src="script.js"></script>
 
 </body>
 
