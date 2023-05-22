@@ -1,6 +1,11 @@
-function sendMessage() {
-  window.alert(document.getElementById("message").value);
-  document.getElementById("message").value = "";
+const drinkform = document.getElementById('drinkform')
+
+drinkform.onsubmit = function(event) {
+    event.preventDefault();
+    let userMess = document.createElement('p');
+    userMess.innerText = drinkinput.value;
+    userMessage.appendChild(userMess);
+    document.getElementById("drinkinput").value = "";
 }
 
 
