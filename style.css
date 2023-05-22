@@ -21,6 +21,8 @@
     align-items: center;
 }
 
+
+  
 p.logo-text {
     color: #2e8d22;
     font-size: 50px;
@@ -303,12 +305,15 @@ p {
     word-wrap: break-word;
 }
 
+
 h2 p {
+    
     color: rgb(81, 126, 104);
     text-align: center;
     font-family: 'Serif';
     font-size: 25 px;
 }
+
 
 
 @media(max-width:768px) {
@@ -401,14 +406,18 @@ div.desc {
     --select-arrow: var(--select-border);
 }
 
+
 .Chatbot {
     background: #000000;
+      
 }
 
+
 .Chatbot .text_chatbot {
+    color: #0e4d12;
+    text-shadow: 0 0 3px #98ff78, 0 0 5px #c5e1d2;
     font-size: 36px;
     font-weight: 600;
-    color: #6ee93d;
     text-align: center;
 }
 
@@ -419,7 +428,8 @@ div.desc {
 .Recipes .text_recipes {
     font-size: 36px;
     font-weight: 600;
-    color: #6ee93d;
+    color: #0e4d12;
+    text-shadow: 0 0 3px #7bff52, 0 0 5px #c5e1d2;
     text-align: center;
 }
 
@@ -616,3 +626,5 @@ footer {
     height: 50px;
     width: 50px;
   }
+
+
