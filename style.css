@@ -108,6 +108,7 @@ nav img {
     font-size: 78px;
     text-shadow: 0 0 3px #7bff52, 0 0 5px #c5e1d2;
     color: #307627;
+    text-align: center;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: white;
     line-height: 80px;
@@ -119,6 +120,7 @@ nav img {
     -webkit-text-stroke-color: white;
     text-shadow: 0 0 3px #7bff52, 0 0 5px #c5e1d2;
     color: #4bca3a;
+    text-align: center;
 }
 
 .text-box h1.line3 {
@@ -128,6 +130,7 @@ nav img {
     line-height: 90px;
     text-shadow: 0 0 3px #7bff52, 0 0 5px #c5e1d2;
     color: #307627;
+    text-align: center;
 }
 
 .text-box p {
