@@ -622,6 +622,10 @@ footer {
     width: 100%;
     height: 110px;
   }
+  
+  #chatFirstMess{
+    float: left;
+  }
 
   #userMessage{
     float: right;
@@ -629,4 +633,11 @@ footer {
 
   #chatmess{
     float: left;
+  }
+
+  #recipeMessage{
+    float: left;
+    color: rgb(118, 116, 116);
+    font-family: 'Georgia';
+    font-size: 25px;
   }
