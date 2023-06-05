@@ -23,7 +23,6 @@
 
 p.logo-text {
     color: #2e8d22;
-    text-shadow: 0 0 3px #7bff52, 0 0 5px #c5e1d2;
     font-size: 50px;
     font-weight: bold;
 
@@ -106,9 +105,7 @@ nav img {
 
 .text-box h1.line1 {
     font-size: 78px;
-    text-shadow: 0 0 3px #7bff52, 0 0 5px #c5e1d2;
     color: #307627;
-    text-align: center;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: white;
     line-height: 80px;
@@ -118,9 +115,7 @@ nav img {
     font-size: 97px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
-    text-shadow: 0 0 3px #7bff52, 0 0 5px #c5e1d2;
     color: #4bca3a;
-    text-align: center;
 }
 
 .text-box h1.line3 {
@@ -128,9 +123,7 @@ nav img {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
     line-height: 90px;
-    text-shadow: 0 0 3px #7bff52, 0 0 5px #c5e1d2;
     color: #307627;
-    text-align: center;
 }
 
 .text-box p {
@@ -259,8 +252,6 @@ html {
     color: #6ee93d;
 
 }
-
-
 
 p {
     color: rgb(236, 243, 255);
@@ -415,8 +406,7 @@ div.desc {
 .Chatbot .text_chatbot {
     font-size: 36px;
     font-weight: 600;
-    text-shadow: 0 0 3px #7bff52, 0 0 5px #c5e1d2;
-    color: #193d09;
+    color: #6ee93d;
     text-align: center;
 }
 
@@ -427,9 +417,9 @@ div.desc {
 .Recipes .text_recipes {
     font-size: 36px;
     font-weight: 600;
-    text-shadow: 0 0 3px #7bff52, 0 0 5px #c5e1d2;
-    color:  #193d09;
+    color: #6ee93d;
     text-align: center;
+    padding: 68px;
 }
 
 .Recipes .section-container .gallery-container .item .desciption ul li {
@@ -620,33 +610,23 @@ footer {
     border-radius: 10px;
     height: 70px;
     width: 70px;
-  }
+}
 
-  #arrow{
+#arrow{
     height: 50px;
     width: 50px;
-  }
+}
 
-  #drinkinput{
+#drinkinput{
     width: 100%;
     height: 110px;
-  }
-  
-  #chatFirstMess{
-    float: left;
-  }
+}
 
-  #userMessage{
+#userMessage{
     float: right;
-  }
+}
 
-  #chatmess{
+#chatmess{
     float: left;
-  }
+}
 
-  #recipeMessage{
-    float: left;
-    color: rgb(118, 116, 116);
-    font-family: 'Georgia';
-    font-size: 25px;
-  }
