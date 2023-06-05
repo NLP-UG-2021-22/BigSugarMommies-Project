@@ -7,7 +7,7 @@ drinkform.onsubmit = function(event) {
   const drinkValue = drinkinput.value;
   let userMess = document.createElement('p');
   userMess.innerText = drinkinput.value;
-  userMessage.appendChild(userMess);
+  chatbotMessages.appendChild(userMess);
   document.getElementById("drinkinput").value = "";
   let url = urlBase;
   url += drinkValue.replaceAll(" ", "+");
@@ -19,12 +19,12 @@ drinkform.onsubmit = function(event) {
     if (response.length === 0) {
       const noDrink = document.createElement('p');
       noDrink.innerText = `Sorry! I don't know how to make ${drinkValue}. :(`;
-      recipeMessage.appendChild(noDrink);
+      chatbotMessages.appendChild(noDrink);
       }
   else {
     const newListHeader = document.createElement('p');
     newListHeader.innerText = `Ingredients for ${drinkValue} are as follows:`
-    recipeMessage.appendChild(newListHeader);
+    chatbotMessages.appendChild(newListHeader);
     const recipeIngredients = response[0]['ingredients'];
     const ingredientList = document.createElement('ul');
     recipeIngredients.forEach(el=> {
@@ -33,11 +33,11 @@ drinkform.onsubmit = function(event) {
       ingredientList.appendChild(newList);
     })
     const recipePara = document.createElement('p');
-    recipeMessage.appendChild(ingredientList)
+    chatbotMessages.appendChild(ingredientList)
     const recipeInstructions = response[0]['instructions'];
     // const recipePara = document.createElement('p');
     recipePara.innerText = `Recipe for ${drinkValue} is as follows: ${recipeInstructions}`
-    recipeMessage.appendChild(recipePara);
+    chatbotMessages.appendChild(recipePara);
   }})}
 
 
