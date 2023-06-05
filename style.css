@@ -8,12 +8,20 @@
 
 }
 
+body{
+    background-color: #000000;
+}
+
 .header {
     max-height: 95px;
     width: auto;
     color: white;
     padding: 8px 12px;
+    background-color: white;
 
+}
+footer{
+    background-color: white;
 }
 
 .header .logo {
@@ -100,6 +108,7 @@ nav img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 190px;
 
 }
 
@@ -262,7 +271,7 @@ p {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 45px;
     font-weight: 600;
 }
 
@@ -404,10 +413,11 @@ div.desc {
 }
 
 .Chatbot .text_chatbot {
-    font-size: 36px;
+    font-size: 50px;
     font-weight: 600;
     color: #6ee93d;
     text-align: center;
+    padding-bottom: 40px;
 }
 
 .Recipes {
@@ -415,11 +425,12 @@ div.desc {
 }
 
 .Recipes .text_recipes {
-    font-size: 36px;
+    font-size: 50px;
     font-weight: 600;
     color: #6ee93d;
     text-align: center;
-    padding: 68px;
+    padding-top: 110px;
+    padding-bottom: 40px;
 }
 
 .Recipes .section-container .gallery-container .item .desciption ul li {
@@ -439,7 +450,7 @@ div.desc {
 }
 
 .Contact .text_contact {
-    font-size: 36px;
+    font-size: 45px;
     font-weight: 600;
     color: #6ee93d;
     text-align: center;
@@ -630,3 +641,51 @@ footer {
     float: left;
 }
 
+
+
+#chatFirstMess{
+    background: green;
+    border-radius: 36px;
+    padding: 25px;
+    margin: 8px;
+}
+
+.userMessChat{
+    background: green;
+    border-radius: 38px;
+    max-width: 30%;
+    display: inline-block;
+    float: right;
+    padding: 31px;
+    font-size: 20px;
+    color: white;
+}
+
+#chatbotMessages{
+    margin: 8px;
+}
+
+.messageContainer{
+    overflow: overlay;
+}
+
+.botMessChat{
+    background: #224522;
+    border-radius: 38px;
+    max-width: 70%;
+    display: inline-block;
+    float: left;
+    padding: 31px;
+    font-size: 20px;
+    color: white;
+    white-space: pre;
+    white-space: break-spaces;
+}
+
+#ingredientsend{
+    width: 130px;
+}
+
+#drinksend{
+    width: 130px;
+}
