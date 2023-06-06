@@ -667,6 +667,7 @@ footer {
 
 .messageContainer{
     overflow: overlay;
+    margin-bottom: 8px;
 }
 
 .botMessChat{
