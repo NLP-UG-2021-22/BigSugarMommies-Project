@@ -39,7 +39,7 @@ p.logo-text {
 .main-section {
     min-height: 100vh;
     width: 100%;
-    background-image: url(img/image1.jpg);
+    background-image: url(img/back.jpg);
     background-position: 30% 50%;
     background-size: cover;
     display: flex;
@@ -667,6 +667,7 @@ footer {
 
 .messageContainer{
     overflow: overlay;
+    margin-bottom: 8px;
 }
 
 .botMessChat{
