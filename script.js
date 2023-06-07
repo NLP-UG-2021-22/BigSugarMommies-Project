@@ -35,7 +35,7 @@ drinkform.onsubmit = function (event) {
 
     if (event.submitter.id == 'drinksend') {
       //============================//
-      const bazaSlowKluczy = ["mojito", "bloody mary", "lime", "pegu", "pisco sour", "jack rose","french connection","gimlet","suffering bastard"];
+      const bazaSlowKluczy = ["mojito blanco", "mojito", "tommy's margarita", "mezcal margarita", "texas star margarita", "east coast tommy margarita", "blood orange margarita (ben davidson)", "margarita", "bloody mary", "lime", "pegu", "pisco sour", "jack rose","french connection","gimlet","suffering bastard"];
       let submittedText = drinkValue;
       var foundKey = null;
       var position = -1;
@@ -66,8 +66,8 @@ drinkform.onsubmit = function (event) {
               botMessContainer.appendChild(botMess);
               chatbotMessages.appendChild(botMessContainer);
             }
-            else {
-              botMess.textContent = `Ingredients for ${foundKey} are as follows: \r\n`;
+            else if (response.length === 1) {
+              botMess.textContent = `Ingredients for ${drinkValue} are as follows: \r\n`;
               const recipeIngredients = response[0]['ingredients'];
               const ingredientList = document.createElement('ul');
               recipeIngredients.forEach(el => {
@@ -75,10 +75,37 @@ drinkform.onsubmit = function (event) {
               })
               const recipeInstructions = response[0]['instructions'];
               botMess.textContent += "\r\n";
-              botMess.textContent += `Recipe for ${foundKey} is as follows: ${recipeInstructions}`
+              botMess.textContent += `Recipe for ${drinkValue} is as follows: ${recipeInstructions}`
               botMessContainer.appendChild(botMess);
               chatbotMessages.appendChild(botMessContainer);
             }
+           else {
+            botMess.textContent = `Ingredients for ${drinkValue} are as follows: \r\n`;
+            const recipeIngredients = response[0]['ingredients'];
+            const ingredientList = document.createElement('ul');
+            recipeIngredients.forEach(el => {
+              botMess.textContent += `${el} \r\n`;
+            })
+            const recipeInstructions = response[0]['instructions'];
+            botMess.textContent += "\r\n";
+            botMess.textContent += `Recipe for ${drinkValue} is as follows: ${recipeInstructions}`
+  
+            
+            let multipleDrinks = [];
+            for (i=0; i<response.length; i++){
+              if (i === (response.length -1))
+              multipleDrinks += `${response[i]['name']}.`
+              else {
+                multipleDrinks += `${response[i]['name']}, `
+              }
+            }
+  
+            botMess.textContent += "\r\n";
+            botMess.textContent += "\r\n";
+            botMess.textContent += `Looks like there is more than one drink with ${drinkValue} in the name: ${multipleDrinks} If you'd like to find out more about one of them search its name. :)`
+            botMessContainer.appendChild(botMess);
+            chatbotMessages.appendChild(botMessContainer);
+          }
           })
       }
       else {
@@ -91,7 +118,7 @@ drinkform.onsubmit = function (event) {
 
     if (event.submitter.id == 'ingredientsend') {
       //=============//
-      const bazaSlowKluczy = ["lime", "mint", "sugar"];
+      const bazaSlowKluczy = ["lime", "mint", "sugar", "vodka", "rum", "gin"];
       let submittedText = drinkValue;
       var foundKey = null;
       var position = -1;
