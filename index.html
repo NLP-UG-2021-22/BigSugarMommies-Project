@@ -102,7 +102,7 @@
 
         </div>
         <div class="chat-popup" id="myForm">
-          <form id="drinkform">
+          <form id="drinkform" onkeydown="return event.key != 'Enter';">
             <input type="text" id="drinkinput" />
             <input type="submit" id="drinksend" value="DRINK NAME" />
             <input type="submit" id="ingredientsend" value="INGREDIENT" />
