@@ -105,6 +105,8 @@ nav img {
 }
 
 .text-box h1.line1 {
+    display: flex;
+    justify-content: center;
     font-size: 78px;
     text-shadow: 0 0 3px #7bff52, 0 0 5px #c5e1d2;
     color: #307627;
@@ -115,6 +117,8 @@ nav img {
 }
 
 .text-box h1.line2 {
+    display: flex;
+    justify-content: center;
     font-size: 97px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
@@ -124,6 +128,8 @@ nav img {
 }
 
 .text-box h1.line3 {
+    display: flex;
+    justify-content: center;
     font-size: 62px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
