@@ -35,7 +35,10 @@ drinkform.onsubmit = function (event) {
 
     if (event.submitter.id == 'drinksend') {
       //============================//
-      const bazaSlowKluczy = ["mojito blanco", "mojito", "tommy's margarita", "mezcal margarita", "texas star margarita", "east coast tommy margarita", "blood orange margarita (ben davidson)", "margarita", "bloody mary", "lime", "pegu", "pisco sour", "jack rose","french connection","gimlet","suffering bastard"];
+      const bazaSlowKluczy = ["mojito blanco", "mojito", "tommy's margarita", "mezcal margarita", "texas star margarita", "east coast tommy margarita", 
+      "blood orange margarita (ben davidson)", "margarita", "bloody mary", "pegu", "pisco sour", "jack rose","french connection", "vodka gimlet", "gimlet",
+      "suffering bastard","long island ice tea", "blue lagoon", "cosmopolitan", "daiquiri", "whiskey sour", "vodka martini", "espresso martini", "martini", "bacardi", 
+      "blue hawaii"];
       let submittedText = drinkValue;
       var foundKey = null;
       var position = -1;
@@ -102,7 +105,8 @@ drinkform.onsubmit = function (event) {
   
             botMess.textContent += "\r\n";
             botMess.textContent += "\r\n";
-            botMess.textContent += `Looks like there is more than one drink with ${drinkValue} in the name: ${multipleDrinks} If you'd like to find out more about one of them search its name. :)`
+            botMess.textContent += `Looks like there is more than one drink with ${drinkValue} in the name: ${multipleDrinks} 
+            If you'd like to find out more about one of them search its name. :)`
             botMessContainer.appendChild(botMess);
             chatbotMessages.appendChild(botMessContainer);
           }
@@ -118,7 +122,8 @@ drinkform.onsubmit = function (event) {
 
     if (event.submitter.id == 'ingredientsend') {
       //=============//
-      const bazaSlowKluczy = ["lime", "mint", "sugar", "vodka", "rum", "gin"];
+      const bazaSlowKluczy = ["lime", "mint", "sugar", "vodka", "rum", "gin", "tequila", "gin", "lemon", "aperol", "grapefruit", "vermouth", "tabasco", "cointreau",
+      "whiskey", "simple syrup", "bitters", "espresso"];
       let submittedText = drinkValue;
       var foundKey = null;
       var position = -1;
