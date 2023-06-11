@@ -35,7 +35,10 @@ drinkform.onsubmit = function (event) {
 
     if (event.submitter.id == 'drinksend') {
       //============================//
-      const bazaSlowKluczy = ["mojito blanco", "mojito", "tommy's margarita", "mezcal margarita", "texas star margarita", "east coast tommy margarita", "blood orange margarita (ben davidson)", "margarita", "bloody mary", "lime", "pegu", "pisco sour", "jack rose","french connection","gimlet","suffering bastard"];
+      const bazaSlowKluczy = ["mojito blanco", "mojito", "tommy's margarita", "mezcal margarita", "texas star margarita", "east coast tommy margarita", 
+      "blood orange margarita", "margarita", "bloody mary", "pegu", "pisco sour", "jack rose", "french connection", "vodka gimlet", "gimlet", "suffering bastard", 
+      "long island ice tea", "blue lagoon", "cosmopolitan", "daiquiri", "whiskey sour", "vodka martini", "espresso martini", "martini", "old town vodka punch", 
+      "bacardi", "blue hawaii", "cojito"];
       let submittedText = drinkValue;
       var foundKey = null;
       var position = -1;
@@ -109,7 +112,7 @@ drinkform.onsubmit = function (event) {
           })
       }
       else {
-        botMess.textContent = `Sorry! I don't understand the request. :(`;
+        botMess.textContent = `Sorry! I don't know how to make ${drinkValue}. :(`;
         botMessContainer.appendChild(botMess);
         chatbotMessages.appendChild(botMessContainer);
       }
@@ -118,7 +121,8 @@ drinkform.onsubmit = function (event) {
 
     if (event.submitter.id == 'ingredientsend') {
       //=============//
-      const bazaSlowKluczy = ["lime", "mint", "sugar", "vodka", "rum", "gin"];
+      const bazaSlowKluczy = ["lime", "mint", "sugar", "vodka", "rum", "gin", "tequila", "lemon", "aperol", "grapefruit", "vermouth", "tabasco", "cointreau", 
+      "whiskey", "simple syrup", "bitters", "espresso"];
       let submittedText = drinkValue;
       var foundKey = null;
       var position = -1;
@@ -145,7 +149,7 @@ drinkform.onsubmit = function (event) {
           .then(response => {
             console.log(response)
             if (response.length === 0) {
-              botMess.textContent = `Sorry! I didn't find any drink with ${foundKey}. :(`;
+              botMess.textContent = `Sorry! I didn't find any drinks with ${foundKey}. :(`;
               botMessContainer.appendChild(botMess);
               chatbotMessages.appendChild(botMessContainer);
             }
@@ -168,7 +172,7 @@ drinkform.onsubmit = function (event) {
       }
 
       else {
-        botMess.textContent = `Sorry! I don't understand the request. :(`;
+        botMess.textContent = `Sorry! I didn't find any drinks with ${drinkValue}. :(`;
         botMessContainer.appendChild(botMess);
         chatbotMessages.appendChild(botMessContainer);
       }
