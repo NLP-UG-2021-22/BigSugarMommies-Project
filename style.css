@@ -516,7 +516,7 @@ display:flex;
 }
 
 #chatFirstMess{
-    background: #224522;
+    background: #163016;
     border-radius: 36px;
     padding: 25px;
     margin: 8px;
@@ -528,7 +528,7 @@ display:flex;
 }
 
 .userMessChat{
-    background: green;
+    background: #145a14;
     border-radius: 38px;
     max-width: 30%;
     display: inline-block;
@@ -549,7 +549,7 @@ display:flex;
 }
 
 .botMessChat{
-    background: #224522;
+    background: #163016;
     border-radius: 38px;
     max-width: 70%;
     display: inline-block;
