@@ -22,6 +22,7 @@ drinkform.onsubmit = function (event) {
 
     chatbotMessages.appendChild(message);
 
+    scrollToBottom()
 
     let botMessContainer = document.createElement('div');
     botMessContainer.classList.add('messageContainer');
@@ -68,6 +69,7 @@ drinkform.onsubmit = function (event) {
               botMess.textContent = `Sorry! I don't know how to make ${foundKey}. :(`;
               botMessContainer.appendChild(botMess);
               chatbotMessages.appendChild(botMessContainer);
+              scrollToBottom()
             }
             else if (response.length === 1) {
               botMess.textContent = `Ingredients for ${drinkValue} are as follows: \r\n`;
@@ -81,6 +83,7 @@ drinkform.onsubmit = function (event) {
               botMess.textContent += `Recipe for ${drinkValue} is as follows: ${recipeInstructions}`
               botMessContainer.appendChild(botMess);
               chatbotMessages.appendChild(botMessContainer);
+              scrollToBottom()
             }
            else {
             botMess.textContent = `Ingredients for ${drinkValue} are as follows: \r\n`;
@@ -108,6 +111,7 @@ drinkform.onsubmit = function (event) {
             botMess.textContent += `Looks like there is more than one drink with ${drinkValue} in the name: ${multipleDrinks} If you'd like to find out more about one of them search its name. :)`
             botMessContainer.appendChild(botMess);
             chatbotMessages.appendChild(botMessContainer);
+            scrollToBottom()
           }
           })
       }
@@ -115,6 +119,7 @@ drinkform.onsubmit = function (event) {
         botMess.textContent = `Sorry! I don't know how to make ${drinkValue}. :(`;
         botMessContainer.appendChild(botMess);
         chatbotMessages.appendChild(botMessContainer);
+        scrollToBottom()
       }
     }
 
@@ -152,6 +157,7 @@ drinkform.onsubmit = function (event) {
               botMess.textContent = `Sorry! I didn't find any drinks with ${foundKey}. :(`;
               botMessContainer.appendChild(botMess);
               chatbotMessages.appendChild(botMessContainer);
+              scrollToBottom()
             }
             else {
               botMess.textContent = `Drinks with ${foundKey} are as follows: \r\n`;
@@ -166,7 +172,7 @@ drinkform.onsubmit = function (event) {
               })
               botMessContainer.appendChild(botMess);
               chatbotMessages.appendChild(botMessContainer);
-
+              scrollToBottom()
             }
           })
       }
@@ -175,14 +181,19 @@ drinkform.onsubmit = function (event) {
         botMess.textContent = `Sorry! I didn't find any drinks with ${drinkValue}. :(`;
         botMessContainer.appendChild(botMess);
         chatbotMessages.appendChild(botMessContainer);
+        scrollToBottom()
       }
     }
   }
 }
 
+// Auto scroll to bottom to see the latest chat
+function scrollToBottom() {
+  const messageScroll = document.querySelector(".messages");
+  messageScroll.scrollTop = messageScroll.scrollHeight;
+}
 
-
-
+// Auto scroll to the top of the page
 
 let mybutton = document.getElementById("myBtn");
 
